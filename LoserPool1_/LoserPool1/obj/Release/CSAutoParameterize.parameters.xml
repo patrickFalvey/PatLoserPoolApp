@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-LoserPool1-20150308052605.mdf;Initial Catalog=aspnet-LoserPool1-20150308052605;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Larry\\Documents\\GitHub\\NewLoserPool\\LoserPool1_\\LoserPool1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Pool2Connection-Web.config Connection String" description="Pool2Connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localDb)\MSSQLLocalDb;AttachDbFilename=|DataDirectory|\Pools2.mdf;Initial Catalog=Pools2;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Larry\\Documents\\GitHub\\NewLoserPool\\LoserPool1_\\LoserPool1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Pool2Connection']/@connectionString" />
+  </parameter>
+  <parameter name="LoserPool2Connection-Web.config Connection String" description="LoserPool2Connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localDb)\MSSQLLocalDb;AttachDbFilename=|DataDirectory|\LosersPool2.mdf;Initial Catalog=LosersPool2;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Larry\\Documents\\GitHub\\NewLoserPool\\LoserPool1_\\LoserPool1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LoserPool2Connection']/@connectionString" />
+  </parameter>
+</parameters>

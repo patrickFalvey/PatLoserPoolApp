@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schedule>
+  <week weekNumber="week1">
+    <game gameNumber="game1">
+      <homeTeam>seahawks</homeTeam>
+      <awayTeam>packers</awayTeam>
+      <startTime>9:30 AM</startTime>
+      <startDate>3/4/15</startDate>
+    </game>
+    <game gameNumber="game2">
+      <homeTeam>falcons</homeTeam>
+      <awayTeam>saints</awayTeam>
+      <startTime>9:30 AM</startTime>
+      <startDate>3/4/15</startDate>
+    </game>
+    <game gameNumber="game3">
+      <homeTeam>cardinals</homeTeam>
+      <awayTeam>chargers</awayTeam>
+      <startTime>2:30 PM</startTime>
+      <startDate>3/8/15</startDate>
+    </game>
+    <game gameNumber="game4">
+      <homeTeam>lions</homeTeam>
+      <awayTeam>giants</awayTeam>
+      <startTime>2:30 PM</startTime>
+      <startDate>3/8/15</startDate>
+    </game>
+    <bye>
+      <none />
+    </bye>
+  </week>
+  <week weekNumber="week2">
+    <game gameNumber="game1">
+      <homeTeam>saints</homeTeam>
+      <awayTeam>seahawks</awayTeam>
+      <startTime>2:30 PM</startTime>
+      <startDate>3/28/15</startDate>
+    </game>
+    <game gameNumber="game2">
+      <homeTeam>packers</homeTeam>
+      <awayTeam>falcons</awayTeam>
+      <startTime>9:30 AM</startTime>
+      <startDate>3/28/15</startDate>
+    </game>
+    <game gameNumber="game3">
+      <homeTeam>giants</homeTeam>
+      <awayTeam>cardinals</awayTeam>
+      <startTime>9:30 AM</startTime>
+      <startDate>3/28/15</startDate>
+    </game>
+    <game gameNumber="game4">
+      <homeTeam>chargers</homeTeam>
+      <awayTeam>lions</awayTeam>
+      <startTime>2:30 PM</startTime>
+      <startDate>3/28/15</startDate>
+    </game>
+    <bye>
+      <none />
+    </bye>
+  </week>
+  <week weekNumber="week3">
+    <game gameNumber="game1">
+      <homeTeam>cardinals</homeTeam>
+      <awayTeam>saints</awayTeam>
+      <startTime>2:30 PM</startTime>
+      <startDate>4/16/15</startDate>
+    </game>
+    <game gameNumber="game2">
+      <homeTeam>lions</homeTeam>
+      <awayTeam>packers</awayTeam>
+      <startTime>9:30 AM</startTime>
+      <startDate>4/14/15</startDate>
+    </game>
+    <game gameNumber="game3">
+      <homeTeam>seahawks</homeTeam>
+      <awayTeam>giants</awayTeam>
+      <startTime>9:30 AM</startTime>
+      <startDate>4/14/15</startDate>
+    </game>
+    <game gameNumber="game4">
+      <homeTeam>falcons</homeTeam>
+      <awayTeam>chargers</awayTeam>
+      <startTime>2:30 PM</startTime>
+      <startDate>4/16/15</startDate>
+    </game>
+    <bye>
+      <none />
+    </bye>
+  </week>
+</schedule>
