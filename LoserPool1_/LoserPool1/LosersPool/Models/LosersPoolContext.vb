@@ -14,7 +14,7 @@ Namespace LosersPool.Models
         Public Property UserResultList As DbSet(Of UserResult)
 
         Public Sub New()
-            MyBase.New("LosersPool2")
+            MyBase.New("LosersPool2-Test")
         End Sub
 
 

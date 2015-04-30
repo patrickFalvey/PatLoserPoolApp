@@ -591,6 +591,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="LosersPool\Logic\" />
+    <Folder Include="TestFiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

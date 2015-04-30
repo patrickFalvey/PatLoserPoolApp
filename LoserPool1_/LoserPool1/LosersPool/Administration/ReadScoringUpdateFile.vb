@@ -12,7 +12,7 @@ Public Class ReadScoringUpdateFile
             Using (_dbLoserPool)
 
 
-                Dim myUpdate = XDocument.Load("C:\Users\Larry\Documents\GitHub\NewLoserPool\scoringUpdateWeek1Update1.xml")
+                Dim myUpdate = XDocument.Load("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\scoringUpdateWeek1Update1.xml")
 
                 Dim queryTime = (From score In myUpdate.Descendants("scores")
                                  Select New ScoreUpdateXML With {.filetime = score.Attribute("filetime"),

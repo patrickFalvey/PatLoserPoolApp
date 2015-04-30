@@ -18,12 +18,12 @@ Public Class ReadScheduleFile
 
         If filecontrol = "onefile" Then
 
-            Dim pathname = "C:\Users\Larry\Documents\GitHub\NewLoserPool\scheduleDataWeek3.xml"
+            Dim pathname = "C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\scheduleDataWeek3.xml"
             ReadScheduleXMLFileAndWriteToScheduleEntities(pathname)
 
         ElseIf filecontrol = "manyfiles" Then
 
-            Dim schedulefile = XDocument.Load("C:\Users\Larry\Documents\GitHub\NewLoserPool\scheduleDataFileList.xml")
+            Dim schedulefile = XDocument.Load("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\scheduleDataFileList.xml")
 
             Dim weekFileList = (From weekFile In schedulefile.Descendants("schedulefiles").Descendants("file")
                                 Select New weeklyFileXML With {.weekFilePath = weekFile.Elements("filepath").Value}).ToList

@@ -131,3 +131,118 @@ Public Class MyPoolListAlso
     End Sub
 
 End Class
+
+Public Class SeedPools
+    Public Sub New()
+        Dim _dbPools2 As New PoolDbContext
+
+
+        Try
+
+            Using (_dbPools2)
+
+                Dim querypool1 = (From user1 In _dbPools2.Pools).ToList
+
+                If querypool1.Count >= 1 Then
+                    Exit Sub
+                End If
+
+                Dim pool1 As New Pool
+                pool1.PoolId = "pool1"
+                pool1.PoolName = "LoserPool"
+
+                _dbPools2.Pools.Add(pool1)
+
+                Dim pool2 As New Pool
+                pool2.PoolId = "pool2"
+                pool2.PoolName = "PlayoffPool"
+
+                _dbPools2.Pools.Add(pool2)
+
+                _dbPools2.SaveChanges()
+            End Using
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+End Class
+
+Public Class SeedTeams
+    Public Sub New()
+
+        Dim _dbPools2 As New PoolDbContext
+
+        Try
+            Using (_dbPools2)
+
+                Dim queryTeam1 = (From team1 In _dbPools2.Teams).ToList
+
+                If queryTeam1.Count >= 1 Then
+                    Exit Sub
+                End If
+
+                Dim teams As New List(Of Team)
+                teams = GetTeams()
+                For Each team1 In teams
+                    _dbPools2.Teams.Add(team1)
+                Next
+
+                _dbPools2.SaveChanges()
+
+            End Using
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Public Shared Function GetTeams() As List(Of Team)
+
+        Dim teams As New List(Of Team)
+        Dim t As New Team
+
+        t.TeamId = "team1"
+        t.TeamName = "seahawks"
+        teams.Add(t)
+
+        t = New Team
+        t.TeamId = "team2"
+        t.TeamName = "packers"
+        teams.Add(t)
+
+        t = New Team
+        t.TeamId = "team3"
+        t.TeamName = "falcons"
+        teams.Add(t)
+
+        t = New Team
+        t.TeamId = "team4"
+        t.TeamName = "saints"
+        teams.Add(t)
+
+        t = New Team
+        t.TeamId = "team5"
+        t.TeamName = "chargers"
+        teams.Add(t)
+
+        t = New Team
+        t.TeamId = "team6"
+        t.TeamName = "cardinals"
+        teams.Add(t)
+
+        t = New Team
+        t.TeamId = "team7"
+        t.TeamName = "lions"
+        teams.Add(t)
+
+        t = New Team
+        t.TeamId = "team8"
+        t.TeamName = "giants"
+        teams.Add(t)
+
+        Return teams
+
+    End Function
+
+End Class

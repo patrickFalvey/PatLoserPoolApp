@@ -29,13 +29,19 @@ Public Class _Default1
         End If
 
         'read PoolXML and save to database if table is empty
-        Dim poolList1 = New PoolList("C:\Users\Larry\Documents\GitHub\NewLoserPool\PoolList.xml")
+        'Dim poolList1 = New PoolList("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\PoolList.xml")
+
+        'seed Pools table
+        Dim poolList2 = New SeedPools
 
         'read TeamXML and save to database if table is empty
-        Dim teamList1 = New TeamList("C:\Users\Larry\Documents\GitHub\NewLoserPool\TeamList.xml")
+        'Dim teamList1 = New TeamList("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\TeamList.xml")
+
+        'seed Teams table
+        Dim teamList2 = New SeedTeams
 
         'read MyPoolXML and save to database if table is empty
-        Dim myPool1 = New MyPoolListAlso("C:\Users\Larry\Documents\GitHub\NewLoserPool\MyPoolList.xml")
+        'Dim myPool1 = New MyPoolListAlso("C:\Users\Larry\Documents\GitHub\Russbucks-Test\LoserPool1_\LoserPool1\TestFiles\MyPoolList.xml")
 
         PoolNameTextBox.Focus()
 

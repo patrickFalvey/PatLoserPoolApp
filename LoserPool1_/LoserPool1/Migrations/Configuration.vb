@@ -6,13 +6,13 @@ Imports System.Linq
 Namespace Migrations
 
     Friend NotInheritable Class Configuration 
-        Inherits DbMigrationsConfiguration(Of JoinPools.Models.PoolDbContext)
+        Inherits DbMigrationsConfiguration(Of PlayoffPool.Models.PlayoffPoolContext)
 
         Public Sub New()
             AutomaticMigrationsEnabled = True
         End Sub
 
-        Protected Overrides Sub Seed(context As JoinPools.Models.PoolDbContext)
+        Protected Overrides Sub Seed(context As PlayoffPool.Models.PlayoffPoolContext)
             '  This method will be called after migrating to the latest version.
 
             '  You can use the DbSet(Of T).AddOrUpdate() helper extension method 

@@ -11,7 +11,7 @@ Namespace JoinPools.Models
 
         Public Sub New()
 
-            MyBase.New("Pools2")
+            MyBase.New("Pools2-Test")
 
         End Sub
 

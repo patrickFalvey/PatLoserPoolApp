@@ -35,7 +35,7 @@ Public Class WeeklyScoringUpdate
             Using (_DbLoserPool)
                 Using (_DbPools2)
 
-                    Dim myUpdate = XDocument.Load("C:\Users\Larry\Documents\GitHub\NewLoserPool\scoringUpdate.xml")
+                    Dim myUpdate = XDocument.Load("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\scoringUpdate.xml")
 
                     Dim teams1 As New List(Of Team)
 

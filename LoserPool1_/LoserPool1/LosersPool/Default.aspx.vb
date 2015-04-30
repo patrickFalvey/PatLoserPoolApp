@@ -19,12 +19,14 @@ Public Class _Default2
             Response.Redirect("~/Account/Login.aspx")
         End If
 
+        'First two are need for to use test driver
         'read UserList XML and save to empty Users Table of LoserPool2 database
-        Dim userList1 = New UserList("C:\Users\Larry\Documents\GitHub\NewLoserPool\UserList.xml")
+        Dim userList1 = New UserList("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\UserList.xml")
 
         ' read userChoices XML and save to empty userChoices Table of LoserPool2 database
-        Dim userChoices1 = New UserChoiceList("C:\Users\Larry\Documents\GitHub\NewLoserPool\UserChoicesList.xml", "week1")
+        Dim userChoices1 = New UserChoiceList("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\UserChoicesList.xml", "week1")
 
+        'If reading only one week of schedule
         'to read a weekly XML schedule file uncomment the following statement
         'Dim schedule = New ReadScheduleFile("onefile")
 
@@ -34,8 +36,9 @@ Public Class _Default2
         ' query the schedule table in LoserPool2 to add minstart times and dates to the ScheduleTimePeriod Database
         Dim scheduleTimePeriod1 = New CreateSchedulePeriod
 
+        'Need if reading scheduleTimePeriods from File (unlikely)
         ' read the schedultTimePeriod XML file and save to ScheduleTimePeriod  Table of LoserPool2 Database
-        'Dim scheduleTimePeriod2 = New ReadScheduleTimePeriodXMLFile("C:\Users\Larry\Documents\GitHub\NewLoserPool\scheduleTimePeriod.xml")
+        'Dim scheduleTimePeriod2 = New ReadScheduleTimePeriodXMLFile("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\scheduleTimePeriod.xml")
 
         Dim dummy = "dummy"
     End Sub
@@ -107,7 +110,7 @@ Public Class MyOptionsList
 
         Dim myPool1 As New MyPool
 
-        Dim fileDirectory = "C:\Users\Larry\Documents\GitHub\NewLoserPool\"
+        Dim fileDirectory = "C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\"
         Dim finalScoringUpdateFile = "scoringUpdateFinalWeek"
 
         'Dim GameUpdateCollection As New Dictionary(Of String, GameUpdate)
@@ -119,7 +122,7 @@ Public Class MyOptionsList
 
                 Dim currentDateTime As DateTime = Date.Now
 
-                Dim myUpdate = XDocument.Load("C:\Users\Larry\Documents\GitHub\NewLoserPool\scoringUpdate.xml")
+                Dim myUpdate = XDocument.Load("C:\Users\Larry\Documents\GitHub\PatLoserPoolApp\LoserPool1_\LoserPool1\TestFiles\scoringUpdate.xml")
 
                 ' Get update file time and date
 
